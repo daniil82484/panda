@@ -1,16 +1,15 @@
 package com.example.panda
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.panda.Poster
 
-class Аlphabet_adapter (val con:Context, val list:ArrayList<Poster>):RecyclerView.Adapter<Аlphabet_adapter.Link>(){
+class Аlphabet_adapter(val con: MainScreenActivity, val list:ArrayList<Аlphabet>):RecyclerView.Adapter<Аlphabet_adapter.Link>(){
     class Link(itemView: View):RecyclerView.ViewHolder(itemView) {
-        //val im_di:ImageView =  itemView.findViewById(R.id.item_img)
+        val text1: TextView  =  itemView.findViewById(R.id.text1)
+        val text2: TextView  =  itemView.findViewById(R.id.text2)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Link {
@@ -19,7 +18,8 @@ class Аlphabet_adapter (val con:Context, val list:ArrayList<Poster>):RecyclerVi
     }
 
     override fun onBindViewHolder(holder: Link, position: Int) {
-        //holder.im_di.setImageResource(list[position].imageId)
+        holder.text1.setText(list[position].text1)
+        holder.text2.setText(list[position].text2)
     }
 
     override fun getItemCount(): Int {

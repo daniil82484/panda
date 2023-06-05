@@ -1,7 +1,7 @@
 # panda
 
 #1
-You have come very fast./n
+You have come very fast. \n
 Вы пришли очень быстро
 
 #2

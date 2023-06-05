@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultActivity"
+    tools:context=".Result3Activity"
     android:background="@drawable/bg">
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button4"
@@ -29,29 +30,11 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="223dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="140dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img3" />
-
-    <FrameLayout
-        android:id="@+id/fl1"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
-
-        <VideoView
-            android:id="@+id/videoView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </FrameLayout>
+        app:srcCompat="@drawable/img2" />
 
     <TextView
         android:id="@+id/textView5"
@@ -59,10 +42,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="2 / 2"
+        android:text="2 / 3"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

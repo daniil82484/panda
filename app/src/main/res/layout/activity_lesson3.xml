@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lesson2Activity"
+    tools:context=".Lesson3Activity"
     android:background="@drawable/bg">
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn"
@@ -29,14 +30,13 @@
         android:id="@+id/toolbar2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:background="@color/white20"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Тест"
+        app:title="Урок"
         app:titleTextColor="@color/white" />
 
     <TextView

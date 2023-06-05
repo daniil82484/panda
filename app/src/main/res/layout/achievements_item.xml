@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="100dp"
     android:paddingBottom="20dp">
 
 
@@ -11,6 +11,9 @@
         android:id="@+id/image"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:background="@drawable/btn4"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

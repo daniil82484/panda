@@ -16,12 +16,11 @@ class Lesson3Activity : AppCompatActivity() {
     var preff: SharedPreferences?= null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lesson2)
+        setContentView(R.layout.activity_lesson3)
 
         preff = getSharedPreferences("TABLEE", MODE_PRIVATE)
         text = findViewById(R.id.editTextText)
         btn = findViewById(R.id.btn)
-
 
         text.addTextChangedListener {
             editContent()
@@ -44,20 +43,26 @@ class Lesson3Activity : AppCompatActivity() {
     }
 
     fun go(view: View) {
-        if (text.text.toString() == "123") {
+        if (text.text.toString() == "Кейт любит собак") {
             addData()
             if (preff?.getInt("bb", 0)!! >= 2){
                 val intent = Intent(this, ResultActivity::class.java)
                 startActivity(intent)
             }
             else{
-                val intent = Intent(this, Result2Activity::class.java)
+                val intent = Intent(this, Result3Activity::class.java)
                 startActivity(intent)
             }
         } else {
             Toast.makeText(this, "Ошибка!", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, Lesson3Activity::class.java)
-            startActivity(intent)
+            if (preff?.getInt("bb", 0)!! >= 2){
+                val intent = Intent(this, ResultActivity::class.java)
+                startActivity(intent)
+            }
+            else{
+                val intent = Intent(this, Result3Activity::class.java)
+                startActivity(intent)
+            }
         }
     }
 

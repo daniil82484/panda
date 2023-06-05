@@ -44,7 +44,7 @@ class Lesson2Activity : AppCompatActivity() {
     }
 
     fun go(view: View) {
-        if (text.text.toString() == "123") {
+        if (text.text.toString() == "Они видят женщину") {
             addData()
             val intent = Intent(this, Lesson3Activity::class.java)
             startActivity(intent)

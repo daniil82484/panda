@@ -27,13 +27,10 @@ class MainScreenActivity : AppCompatActivity() {
 
         preff = getSharedPreferences("TABLEE", MODE_PRIVATE)
 
-
-        //supportFragmentManager.beginTransaction().replace(R.id.fragmentHolder,fraglist[2]).commit()
-
         tb = findViewById(R.id.toolbar)
         setSupportActionBar(this.tb)
         supportActionBar?.setDisplayHomeAsUpEnabled(false) // back
-        supportActionBar?.title="Алфавит"
+        supportActionBar?.title="Меню"
 
 
 
@@ -41,10 +38,6 @@ class MainScreenActivity : AppCompatActivity() {
     }
     fun lesson(view: View) {
         val intent = Intent(this, LessonActivity::class.java)
-        startActivity(intent)
-    }
-    fun test(view: View) {
-        val intent = Intent(this, TestActivity::class.java)
         startActivity(intent)
     }
 

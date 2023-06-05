@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Panda"
         tools:targetApi="31">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlphabetActivity"
+            android:exported="false" />
+        <activity
             android:name=".Lesson2Activity"
             android:exported="false" />
         <activity
@@ -28,13 +34,13 @@
             android:name=".TestActivity"
             android:exported="false" />
         <activity
-            android:name=".MainScreenActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SigninActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

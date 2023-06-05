@@ -1,16 +1,16 @@
 # panda
 
 
-#1
+# 1
 You have come very fast
 Вы пришли очень быстро
 
 
-#2
+# 2
 They see a woman
 Они видят женщину
 
 
-#3
+# 3
 Kate likes dogs
 Кейт любит собак

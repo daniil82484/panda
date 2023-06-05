@@ -26,11 +26,18 @@ class LessonActivity : AppCompatActivity() {
         text.addTextChangedListener {
             editContent()
         }
+        resetData()
     }
-    fun saveData(bb:Int)
+    fun resetData()
     {
         val editor = preff?.edit()
-        editor?.putInt("bb", bb)
+        editor?.putInt("bb", 0)
+        editor?.apply()
+    }
+    fun addData()
+    {
+        val editor = preff?.edit()
+        editor?.putInt("bb", (preff?.getInt("bb", 0)!! + 1))
         editor?.apply()
     }
     private fun editContent() {
@@ -45,11 +52,13 @@ class LessonActivity : AppCompatActivity() {
 
     fun go(view: View) {
         if (text.text.toString() == "123") {
-            saveData(1)
+            addData()
             val intent = Intent(this, Lesson2Activity::class.java)
             startActivity(intent)
         } else {
             Toast.makeText(this, "Ошибка!", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Lesson2Activity::class.java)
+            startActivity(intent)
         }
     }
 }

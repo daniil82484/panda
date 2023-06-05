@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class Аlphabet_adapter(val con: MainScreenActivity, val list:ArrayList<Аlphabet>):RecyclerView.Adapter<Аlphabet_adapter.Link>(){
+class Аlphabet_adapter(val con: AlphabetActivity, val list:ArrayList<Аlphabet>):RecyclerView.Adapter<Аlphabet_adapter.Link>(){
     class Link(itemView: View):RecyclerView.ViewHolder(itemView) {
         val text1: TextView  =  itemView.findViewById(R.id.text1)
         val text2: TextView  =  itemView.findViewById(R.id.text2)

@@ -17,8 +17,8 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class MainScreenActivity : AppCompatActivity() {
 
+    lateinit var text: TextView
     var preff: SharedPreferences?= null
-
 
     lateinit var tb: Toolbar
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,8 +32,8 @@ class MainScreenActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(false) // back
         supportActionBar?.title="Меню"
 
-
-
+        text = findViewById(R.id.hello)
+        text.text = "Привет, " + preff?.getString("name", "") + "!"
 
     }
     fun lesson(view: View) {
